@@ -6,11 +6,21 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="{% url "/index.html" %}">Lumol</a>
+      <a class="navbar-brand" href="{% url "/index.html" %}">
+          <img src="/static/images/lumol.png" alt="Logo" class="logo">
+      </a>
     </div>
     <div class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li class="{% if_current_page '/index.html' 'active' '' %}"><a href="{% url '/index.html' %}">Home</a></li>
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Documentation <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+                <li><a href="http://lumol-org.github.io/lumol/latest/book/">User manual</a></li>
+                <li><a href="http://lumol-org.github.io/lumol/latest/lumol/">Developer reference</a></li>
+            </ul>
+            <li><a href="https://github.com/lumol-org/lumol">Github</a></li>
+        </li>
         <li class="{% if_current_page '/contact.html' 'active' '' %}"><a href="{% url '/contact.html' %}">Contact</a></li>
       </ul>
     </div><!--/.navbar-collapse -->

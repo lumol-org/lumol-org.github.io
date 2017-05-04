@@ -1,38 +1,84 @@
 {% extends "base.html" %}
 
 {% block body %}
-<div class="jumbotron">
+<div class="jumbotron header">
   <div class="container">
-    <h1>Welcome to Cactus!</h1>
-    <p>Get started with this template based on HTML 5 Boilerplate. Go ahead, explore!</p>
+    <h1>Lumol</h1>
+    <h2>An extensible molecular simulation engine</h2>
   </div>
 </div>
 
 <div class="container">
-  <!-- Example row of columns -->
-  <div class="row">
-
-    <div class="col-lg-3">
-      <h2>Full featured template engine</h2>
-      <p>Cactus uses and extends Django's templating engine. If you've built sites using Django before, you'll feel right at home.</p>
+  <div class="row row-squares">
+    <div class="col-lg-3 square-1">
+      <h2>Flexible</h2>
+      <p>
+          Using Lumol, you can run all kind of simulations: from proteins
+          molecular dynamics to Grand Canonical Monte Carlo adsorption in zeolites.
+      </p>
     </div>
 
-    <div class="col-lg-3">
-      <h2>Pretty URLs</h2>
-      <p>Cactus can prettify URLs, so you can turn <code>/about.html</code> into a fancier <code>/about/</code>.</p>
+    <div class="col-lg-3 square-2">
+      <h2>Extendable</h2>
+      <p>
+          Lumol is built around an extendable core, you easily add your own
+          simulation algorithms to the code: new potentials, new Monte Carlo
+          moves, new molecular dynamics integrators, …
+      </p>
     </div>
 
-    <div class="col-lg-3">
-      <h2>Minification & Fingerprinting</h2>
-      <p>For maximum performance, Cactus can minify and fingerprint your static assets. As for your pages, Cactus will automatically compress them.</p>
+    <div class="col-lg-3 square-3">
+      <h2>Reliable</h2>
+      <p>
+          The code is continuously tested and developed using moderns
+          developement technics. It will never segfault or corrupt memory, and
+          any crash is considered as a bug.
+      </p>
+    </div>
+
+    <div class="col-lg-3 square-4">
+      <h2>Easy to use</h2>
+      <p>
+          Lumol provide ready to use command line tools with a nice input format,
+          and is extensively documented: from user manual to developer reference.
+      </p>
    </div>
+</div>
 
-    <div class="col-lg-3">
-      <h2>And much more</h2>
-      <p>There's of course a lot more you can do with Cactus. Plus, Cactus's plugin framework lets you easily extend its functionality.</p>
-   </div>
+<div class="container">
+    <div class="row">
+        <h1>Installation</h1>
+        <p>
+            Lumol is in alpha state, but you can already try it and send us some
+            feedback so that we can improve it. Copy and paste the line below in
+            a terminal.
+        </p>
+        <pre class="install"><p>cargo install --git https://github.com/lumol-org/lumol</p></pre>
+        <p>
+            You will need a <a href="TODO"> Rust compiler</a> and an internet
+            connection. Next step is to try the examples from the <a href="TODO">
+            user manual </a>, and run your own simulations.
+       </p>
+    </div>
 
+    <div class="row">
+        <h1>Getting help</h1>
+        <p>
+            We have a <a href="https://gitter.im/lumol-org/lumol"> chat room
+            </a> where you can ask your questions and get some help with the
+            code. Do not hesitate to come by and say hi!
+        </p>
+    </div>
 
-  </div>
+    <div class="row">
+        <h1>Contributing</h1>
+        <p>
+            Lumol is open-source and distributed under the BSD license. The code
+            source is on <a href="https://github.com/lumol-org/lumol"> github
+            </a>, and we are open to contributions. Please come around on our
+            <a href="https://gitter.im/lumol-org/lumol"> chat room </a> to
+            discuss how you can help.
+        </p>
+    </div>
 </div>
 {% endblock %}
