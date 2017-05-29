@@ -1,3 +1,8 @@
+html, body {
+  height: 100%;
+  padding-bottom: 0;
+}
+
 @media (min-width:768px) {
 	.container {
 		width:750px
@@ -74,14 +79,23 @@
     display: block;
 }
 
+#wrap {
+  min-height: 100%;
+}
+
+#main {
+  overflow:auto;
+  padding-bottom:100px; /* this needs to be bigger than footer height*/
+}
+
 .footer {
     padding-top: 20px;
     text-align: center;
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 200;
     background-color: #eeeeee;
     position: relative;
-    margin-top: 20px;
-    height: 60px;
+    margin-top: -70px; /* negative value of footer height */
+    height: 70px;
     clear: both;
 }
