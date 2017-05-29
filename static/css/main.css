@@ -1,3 +1,8 @@
+html, body {
+  height: 100%;
+  padding-bottom: 0;
+}
+
 @media (min-width:768px) {
 	.container {
 		width:750px
@@ -18,7 +23,6 @@
     background-image: url("/static/images/main-header.png");
     background-size: auto 100%;
     color: black;
-    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
 
 .row-squares {
@@ -73,4 +77,25 @@
 .logo {
     width: 25px;
     display: block;
+}
+
+#wrap {
+  min-height: 100%;
+}
+
+#main {
+  overflow:auto;
+  padding-bottom:100px; /* this needs to be bigger than footer height*/
+}
+
+.footer {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 200;
+    background-color: #eeeeee;
+    position: relative;
+    margin-top: -70px; /* negative value of footer height */
+    height: 70px;
+    clear: both;
 }
