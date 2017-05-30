@@ -9,9 +9,8 @@ install:
     - git config credential.helper "store --file=.git/credentials"
     - echo "https://${GH_TOKEN}:@github.com" > .git/credentials
 script:
-    - rm -rf static
-    - rm -f *.html
-    - rm -f sitemap.xml robots.txt
+    # Remove previous files
+    - ls -Isrc -IREADME.md -ILICENSE | xargs rm -rf
     - pip install cactus pygments
     - cd src
     - cactus build
