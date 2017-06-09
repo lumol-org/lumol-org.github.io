@@ -10,7 +10,8 @@ install:
     - echo "https://${GH_TOKEN}:@github.com" > .git/credentials
 script:
     # Remove previous files
-    - ls -Isrc -IREADME.md -ILICENSE | xargs rm -rf
+    - ls -Isrc -IREADME.md -ILICENSE -ICNAME | xargs rm -rf
+    - ls
     - pip install cactus pygments
     - cd src
     - cactus build
