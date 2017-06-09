@@ -17,8 +17,9 @@ script:
     - cactus build
     - cd ..
     - mv src/.build/* .
+    - git status
     - git add .
-    - git commit -a -m "[AUTO-COMMIT] Build the website" -m "[ci skip]"
+    - git commit --allow-empty -a -m "[AUTO-COMMIT] Build the website" -m "[ci skip]"
     - git push origin HEAD:master
 
 env:
