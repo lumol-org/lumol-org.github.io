@@ -1,6 +1,4 @@
-{% extends "base.html" %}
-
-{% block body %}
+{% extends "base.html" %} {% block body %}
 <div class="jumbotron header">
   <div class="container">
     <h1>Lumol</h1>
@@ -13,76 +11,84 @@
     <div class="col-lg-3 square-1">
       <h2>Flexible</h2>
       <p>
-          Using Lumol, you can run all kind of simulations: from proteins
-          molecular dynamics to Grand Canonical Monte Carlo adsorption in zeolites.
+        Using Lumol, you can run all kind of simulations: from proteins
+        molecular dynamics to Grand Canonical Monte Carlo adsorption in
+        zeolites.
       </p>
     </div>
 
     <div class="col-lg-3 square-2">
       <h2>Extendable</h2>
       <p>
-          Lumol is built around an extendable core, you easily add your own
-          simulation algorithms to the code: new potentials, new Monte Carlo
-          moves, new molecular dynamics integrators, …
+        Lumol is built around an extendable core, you easily add your own
+        simulation algorithms to the code: new potentials, new Monte Carlo
+        moves, new molecular dynamics integrators, …
       </p>
     </div>
 
     <div class="col-lg-3 square-3">
       <h2>Reliable</h2>
       <p>
-          The code is continuously tested and developed using moderns
-          developement technics. It will never segfault or corrupt memory, and
-          any crash is considered as a bug.
+        The code is continuously tested and developed using moderns developement
+        technics. It will never segfault or corrupt memory, and any crash is
+        considered as a bug.
       </p>
     </div>
 
     <div class="col-lg-3 square-4">
       <h2>Easy to use</h2>
       <p>
-          Lumol provide ready to use command line tools with a nice input format,
-          and is extensively documented: from user manual to developer reference.
+        Lumol provide ready to use command line tools with a nice input format,
+        and is extensively documented: from user manual to developer reference.
       </p>
     </div>
   </div>
 </div>
 
 <div class="container">
-    <div class="row">
-        <h1>Installation</h1>
-        <p>
-            Lumol is in alpha state, but you can already try it and send us some
-            feedback so that we can improve it. Copy and paste the line below in
-            a terminal.
-        </p>
-        <pre class="install"><p>cargo install --git https://github.com/lumol-org/lumol</p></pre>
-        <p>
-            You will need a <a href="http://rust-lang.org/"> Rust compiler</a>
-            and an internet connection. Next step is to try the examples from
-            the <a href="https://lumol-org.github.io/lumol/latest/book/"> user
-            manual </a>, and run your own simulations.
-       </p>
-    </div>
+  <div class="row">
+    <h1>Installation</h1>
+    <p>
+      Lumol is in alpha state, but you can already try it and send us some
+      feedback so that we can improve it. Copy and paste the line below in a
+      terminal.
+    </p>
+    <pre
+      class="install"
+    ><p>cargo install --git https://github.com/lumol-org/lumol lumol</p></pre>
+    <p>
+      You will need a <a href="http://rust-lang.org/"> Rust compiler</a> and an
+      internet connection. Next step is to try the examples from the
+      <a href="https://lumol-org.github.io/lumol/latest/book/"> user manual </a
+      >, and run your own simulations.
+    </p>
+  </div>
 
-    <div class="row">
-        <h1>Getting help</h1>
-        <p>
-            We have a <a href="https://gitter.im/lumol-org/lumol"> chat room
-            </a> where you can ask your questions and get some help with the
-            code. Do not hesitate to come by and say hi!
-        </p>
-    </div>
+  <div class="row">
+    <h1>Getting help</h1>
+    <p>
+      We have a
+      <a href="https://gitter.im/lumol-org/lumol"> chat room </a> where you can
+      ask your questions and get some help with the code. Do not hesitate to
+      come by and say hi!
+    </p>
+  </div>
 
-    <div class="row">
-        <h1>Contributing</h1>
-        <p>
-            Lumol is open-source and distributed under the BSD license. The code
-            source is on <a href="https://github.com/lumol-org/lumol"> github
-            </a>, and we are open to contributions. Please come around on our <a
-            href="https://gitter.im/lumol-org/lumol"> chat room </a> to discuss
-            how you can help, or just pick an
-            <a href="https://github.com/lumol-org/lumol/issues?q=is%3Aissue+is%3Aopen+label%3AE-Easy">
-            easy issue</a> and send a pull-request!
-        </p>
-    </div>
+  <div class="row">
+    <h1>Contributing</h1>
+    <p>
+      Lumol is open-source and distributed under the BSD license. The code
+      source is on <a href="https://github.com/lumol-org/lumol"> github </a>,
+      and we are open to contributions. Please come around on our
+      <a href="https://gitter.im/lumol-org/lumol"> chat room </a> to discuss how
+      you can help, or just pick an
+      <a
+        href="https://github.com/lumol-org/lumol/issues?q=is%3Aissue+is%3Aopen+label%3AE-Easy"
+      >
+        easy issue</a
+      >
+      and send a pull-request!
+    </p>
+  </div>
 </div>
 {% endblock %}
