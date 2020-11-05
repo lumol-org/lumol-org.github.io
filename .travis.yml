@@ -21,7 +21,3 @@ script:
     - git add .
     - git commit --allow-empty -a -m "[AUTO-COMMIT] Build the website" -m "[ci skip]"
     - git push origin HEAD:master
-
-env:
-  global:
-    secure: "TdqEvJ3+zSsDXoATH5a8BqZU+ba59yu9DNSktDOwKXcqDUwecOjIteBrZUwmFS+jG0sZxW62lhTnSrOxyu3IBoVPwYFxlqYYnPFh47OJj/hLUPnp1PtyB9usJQvf3VYrKDPU9UHlx16x+3AVOdvRpadqjBooPiWYTI18EGqUmoAG/qyTarh1zxKil7NwqbIa1GB/7s2eNkqwee29g+pLsLqw9sM7vy/ENCRjS2XfOz/RlpbGVuPQVPUAd/dBIJWcLyQIavwDz8PwXjPPazW7myBhYprdKbuNaEFLpBPJ2Y7uvIKEotpE6jN2b85FbFq7bdXuezcHgfar5G+WJJX4dY7aBlTVwtTmQjvo6QHKu4l8/I8ijyRG+EECMxjt6lKlwwkjry4jDFMD0uTQ4OXg/2JF4P3uj2/DtAmXDtiMjcMRgVn05B9FL8jW7Zt82VPogvT715H0hgkeLMl8ZvFUfmkqAhNsTkrY+xsoz0lQSpHpM9eVhMQlHC6w/Z/J5vcHE9oZRSUiLFpxh8m3cjjLj2k3G1h/sXvZ8g/4dq78qiIz+LgKp4tv9ml/DtNFhi4rEJiqsq0NswWbmK2AA89WSZ8i821AT760KDcjLSyrTPVWJp7yGOitQvb/fFCaI4FfElumVPDijNkgJMXaG33nh7pxJuTS/6zNE7w0Bx3f0io="
